@@ -95,3 +95,10 @@ header > button{
 .delete-icon{
     min-width: 24px;
 }
+
+.todoItem > button{
+    background-color: #6CcF70;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
