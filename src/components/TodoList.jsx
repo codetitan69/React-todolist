@@ -1,20 +1,15 @@
-export default function TodoList() {
+import TodoCard from "./TodoCard"
 
-    let todos = [
-        'Do React Course...',
-        'Complete Full Stack Open...',
-        'Learn NodeJS'
-    ]
+export default function TodoList(props) {
+
+    let {todolist} = props
 
     return (
         <div className="todoListCnt">
             <p className="todoList">
-                {todos.map((todo, todoIndex) => {
+                {todolist.map((Todo, TodoIndex) => {
                     return(
-                        <div className="todoItem" key={todoIndex}>
-                            <p>{todoIndex + 1}. </p>
-                            <div key={todoIndex}>{todo}</div>
-                        </div>
+                        <TodoCard key={TodoIndex} todoindex={TodoIndex} todo={Todo} />
                     )
                 })}
             </p>

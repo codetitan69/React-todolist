@@ -70,7 +70,6 @@ header > button{
 }
 
 .todoList .todoItem{
-    font-size: 0.9rem;
     background-color: #6CcF70;
     border-radius: 4px;
 
@@ -79,4 +78,20 @@ header > button{
 
     padding: 10px;
     min-height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.edit-icon{
+    min-height: 20px;
+    max-height: 20px;
+
+    min-width: 30px;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.delete-icon{
+    min-width: 24px;
 }
